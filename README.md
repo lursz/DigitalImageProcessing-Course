@@ -8,7 +8,33 @@ Operacje arytmetyczne na pixelach:
 - Przemnożenie przez stałą $f_3(x,y) = f_1(x,y) \cdot k$
 
 ## Histogram
-Histogram to wykres słupkowy, którego wartości odzwierciedlają częstotliwość poszczególnych odcieni. Służy on do pomiaru jasności obrazu.  
+- Histogramem obrazu nazywamy wykres słupkowy zdefiniowany następującymi zależnościami:<br>
+\begin{equation}
+h(i) = \sum_{x=0}^{N-1} \sum_{y=0}^{M-1} p(i,(x,y))
+\end{equation}<br>
+gdzie:<br>
+\begin{equation}
+p(i) =  \left\{
+  \begin{array}{l l}
+    1 & \quad \text{gdy} f(x,y) = i\\
+    0 & \quad \text{gdy} f(x,y) \ne i
+  \end{array} \right.
+\end{equation}
+
+- Inaczej mówiąc, histogram zawiera informacje na temat tego ile pikseli o danym poziomie jasności występuje na obrazie (w przypadku obrazu w odcieniach szarości). Określa się to także rozkładem empirycznym cechy.
+
+- Często wykorzystuje się tzw. znormalizowaną postać histogramu  – wszystkie wartości $h(i)$ są dzielone przez liczbę pikseli na obrazie.
+Otrzymana w ten sposób wielkość to gęstość prawdopodobieństwa wystąpienia na obrazie pikseli o odcieniu $i$.
+
+- Histogram można zdefiniować również dla obrazów kolorowych.
+Otrzymujemy wtedy 3 histogramy – po jednym dla danej składowej: R,G,B (lub HSV, YCbCr, itp.) lub histogram trójwymiarowy.
+
+- Histogram jest bardzo użyteczny w przetwarzaniu i analizie obrazów.
+Wykorzystywany jest przy binaryzacji (szerzej na jednym z kolejnych laboratoriów) oraz do oceny jakości (dynamiki, kontrastu) obrazu.
+W idealnym przypadku wszystkie poziomy jasności w obrazie powinny być wykorzystane (i to najlepiej w miarę jednolicie)  – obrazowo mówiąc histogram powinien rozciągać się od 0  – 255 (obraz w skali szarości).
+
+- W przypadku gdy  wykorzystujemy jedynie fragment dostępnego zakresu (wąski histogram)  lub histogram nie jest jednolity (występują dominujące grupy pikseli) obraz ma dość słaby kontrast.
+Cechę tę można poprawić stosując tzw. rozciąganie albo wyrównywanie histogramu (ang. *histogram equalization*).  
 ![](http://www.algorytm.org/images/stories/po/histogram.jpg)
 ## Binarization
 Image processing technique used to convert a `grayscale image` into a `binary image`. 
@@ -46,3 +72,8 @@ Gamma modulation for photos is a technique used to adjust the brightness and con
     - Lapsjany (wykrywające krawędzie)
     - Kierunkowe
     - Wykruwające narożniki
+
+### Gradient Sobela
+
+## Filtry nieliniowe
+- `Filtr medianowy`
