@@ -1,4 +1,26 @@
-# Przetwarzanie obrazów cyfrowych
+# Digital Image Processing
+
+## Table of contents
+| Description  | Lecture | Assignment & Solution | Homework  Assignment & Solution |
+| ------------- | ------------- | ------------- | ------------- |
+| 01. Intro  | [lecture1](Lectures/01.%20Pierwsze%20aplikacje%20konsolowe%20C#%20.NET%20Framework%20Core%207.0)   | [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)| [homework1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+| 02. Point transformations, LUT  | [lecture2](Lectures/02.%20Podstawy%20programowania%20obiektowego%20w%20jezyku%20C#)   | [solution2](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab2)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+| 03. Histogram  | [lecture3](Lectures/03.%20Kolekcje,%20interfejsy,%20serializacja)   | [solution3](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab3)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+| 04. Thresholding  | [lecture4](Lectures/04.%20LINQ)  |  [solution4](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab4)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+| 05. Resolution  | [lecture5](Lectures/05.%20Watki)  |  [solution5](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab5)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+| 06. Context  | [lecture6](Lectures/06.%20ProgramowanieAsynchroniczne)  |  [solution6](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab6)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+| 07. Bilateral  | [lecture7](Lectures/07.%20Zdarzenia,%20podstawowe%20operacje%20kryptograficzne)   | [solution7](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab7)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+| 08. Fourier  | [lecture8](Lectures/08.%20SQLite)   | [solution8](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab8)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+| 09. Canny  | [lecture9](Lectures/09.%20Aspnetmvc)   | [solution9](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab9)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+| 10. Morphology  | [lecture10](Lectures/10.%20Aspnetmvc%202)   | [solution10](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab10)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+| 11. Hough | [lecture11](Lectures/11.%20REST%20API)   | [solution11](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab11)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+| 12. Segmentation  | [lecture12](Lectures/12.%20Reactive)   | [solution12](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab12)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+| 13. CCL  | [lecture13](Lectures/13.%20Kodnienadzorowany)   | [solution13](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab13)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+
+<details>
+<summary>Some notes </summary>
+
+
 ## Transformations
 Operacje arytmetyczne na pixelach:
 - Dodawanie $f_3(x,y) = f_1(x,y) + f_2(x,y)$
@@ -6,9 +28,9 @@ Operacje arytmetyczne na pixelach:
 - Przemnożenie $f_3(x,y) = f_1(x,y) \cdot f_2(x,y)$
 - Kombinacja liniowa (przenikanie) $f_3(x,y) = p \cdot f_1(x,y) + (1-p) \cdot f_2(x,y)$ p[0,1]
 - Przemnożenie przez stałą $f_3(x,y) = f_1(x,y) \cdot k$
-
 ## Histogram
 - Histogramem obrazu nazywamy wykres słupkowy zdefiniowany następującymi zależnościami:<br>
+$$
 \begin{equation}
 h(i) = \sum_{x=0}^{N-1} \sum_{y=0}^{M-1} p(i,(x,y))
 \end{equation}<br>
@@ -20,6 +42,7 @@ p(i) =  \left\{
     0 & \quad \text{gdy} f(x,y) \ne i
   \end{array} \right.
 \end{equation}
+$$
 
 - Inaczej mówiąc, histogram zawiera informacje na temat tego ile pikseli o danym poziomie jasności występuje na obrazie (w przypadku obrazu w odcieniach szarości). Określa się to także rozkładem empirycznym cechy.
 
@@ -73,7 +96,4 @@ Gamma modulation for photos is a technique used to adjust the brightness and con
     - Kierunkowe
     - Wykruwające narożniki
 
-### Gradient Sobela
-
-## Filtry nieliniowe
-- `Filtr medianowy`
+</details>
