@@ -5,3 +5,7 @@ venv/
 *.jpg
 *.png
 *.bmp
+
+#Lab14
+lab14/*
+!lab14/*.ipynb
