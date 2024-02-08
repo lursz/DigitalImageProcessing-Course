@@ -1,21 +1,21 @@
 # Digital Image Processing
 
 ## Table of contents
-| Description   | Assignment & Solution | Homework  Assignment & Solution |
-| ------------- | ------------- | ------------- |
-| 01. Intro  |  [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)| [homework1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
-| 02. Point transformations, LUT  |  [solution2](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab2)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
-| 03. Histogram  |  [solution3](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab3)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
-| 04. Thresholding  | [solution4](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab4)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
-| 05. Resolution  |  [solution5](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab5)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
-| 06. Context  |   [solution6](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab6)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
-| 07. Bilateral  | [solution7](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab7)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
-| 08. Fourier  |  [solution8](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab8)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
-| 09. Canny  |  [solution9](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab9)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
-| 10. Morphology  |  [solution10](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab10)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
-| 11. Hough |  [solution11](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab11)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
-| 12. Segmentation  |  [solution12](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab12)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
-| 13. Indexation  |  [solution13](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab13)| [solution1](https://github.com/lursz/DigitalImageProcessing-Course/tree/main/lab1)|
+| Description   | Assignment & Solution |
+| ------------- | ------------- | 
+| 01. Intro  |  [solution1](lab1/)|
+| 02. Point transformations, LUT  |  [solution2](lab2/)|
+| 03. Histogram  |  [solution3](lab3/)|
+| 04. Thresholding  | [solution4](lab4/)|
+| 05. Resolution  |  [solution5](lab5/)|
+| 06. Context  |   [solution6](lab6/)|
+| 07. Bilateral  | [solution7](lab7/)
+| 08. Fourier  |  [solution8](lab8/)|
+| 09. Canny  |  [solution9](lab9/)|
+| 10. Morphology  |  [solution10](lab10/)|
+| 11. Hough |  [solution11](lab11/)|
+| 12. Segmentation  |  [solution12](lab12/)|
+| 13. Indexation  |  [solution13](lab13/)|
 
 <details>
 <summary>Some notes </summary>
